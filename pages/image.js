@@ -114,7 +114,7 @@ class Page extends React.Component {
           </Head>
           <Box className="box" pose={this.state.isVisible ? 'visible' : 'hidden'}>
             <div className='contents'>
-              <div className='meta'>{this.state.daysAgo == 0 ? `Today` : `${this.state.daysAgo} days ago`}, { this.state.distance } km</div>
+              <div className='meta'>{this.state.daysAgo == 0 ? `TODAY` : `${this.state.daysAgo}DAYS AGO`}, { `${this.state.distance} KM AWAY`}</div>
               <Link href={`/`}>
                 <img src={single.url} alt={single.id}/>
               </Link>

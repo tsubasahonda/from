@@ -1,6 +1,7 @@
 import Header from './Header';
 import Head from 'next/head';
 import Stack from './Stack';
+import Link from 'next/link';
 
 class Layout extends React.Component {
   constructor(props) {
@@ -11,8 +12,13 @@ class Layout extends React.Component {
     const props = this.props;
     return (
       <div className='container'>
+        <Link href='/'>
+          <img src="/static/png/from.png" alt="from" className='logo' />
+        </Link>
+        <div>
         { props.children }
-      <style jsx global>{`
+        </div>
+        <style jsx global>{`
 
         @import url('https://fonts.googleapis.com/css?family=Montserrat');
                 /*!
@@ -347,8 +353,12 @@ class Layout extends React.Component {
         }
         /*# sourceMappingURL=bootstrap-reboot.css.map */
 
-        .container {
-          {/* max-width: 768px; */}
+        .logo {
+          position: fixed;
+          top: 16px;
+          left: 50%;
+          transform: translateX(-50%);
+          max-height: 32px;
         }
     `}</style>
       </div>

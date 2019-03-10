@@ -1,5 +1,6 @@
 {
     "version": 2,
+    "alias": "ca-now",
     "builds": [
         { "src": "package.json", "use": "@now/next" }
     ],

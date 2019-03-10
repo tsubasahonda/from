@@ -36,8 +36,15 @@ export default class MyApp extends App {
     return (
       <Container>
         <Head>
+          <title>from</title>
           <meta name="viewport" content="width=device-width, initial-scale=1" />
           <meta charSet="utf-8" />
+          <meta property="og:title" content='from' />
+          <meta property="og:description" content='from now' />
+          <meta property="og:type" content="blog" />
+          <meta property="og:url" content='ca-fe-challenge.tsubasahonda.now.sh' />
+          <meta property="og:image" content='' />
+          <meta property="og:site_name" content='from now' />
         </Head>
         {/* <Stack {...pageProps} /> */}
         <Component {...pageProps} />
