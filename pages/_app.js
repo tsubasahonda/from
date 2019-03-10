@@ -46,7 +46,6 @@ export default class MyApp extends App {
           <meta property="og:image" content='' />
           <meta property="og:site_name" content='from now' />
         </Head>
-        {/* <Stack {...pageProps} /> */}
         <Component {...pageProps} />
       </Container>
     )
